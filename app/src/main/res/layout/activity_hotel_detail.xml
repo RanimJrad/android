@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Hotel Image and Info -->
+    <ImageView
+        android:id="@+id/hotelImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/hotelNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotel Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/hotelLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DESCRIPTION"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/hotelDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hotel Description" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOTEL FACILITIES"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingTop="8dp">
+
+        <!-- Example icons for facilities -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <!-- Contact Info -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/hotelContactTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone number" />
+
+    <!-- Photos and Map -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PHOTOS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <!-- Sample photo thumbnails -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            />
+        <!-- Add more images as necessary -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hotelPriceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="127 DT / nuitée"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <!-- Reserve Button -->
+    <Button
+        android:id="@+id/reserveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Réserver Maintenant"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
+</ScrollView>
